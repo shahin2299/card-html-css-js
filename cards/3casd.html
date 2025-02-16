@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Video Card</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f9;
+          margin: 20px; /
+      }
+
+      .video-card {
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+          background-color: #181818;
+          border-radius: 8px;
+          overflow: hidden;
+          color: white;
+          font-size: 14px;
+
+      }
+
+      .thumbnail {
+          position: relative;
+      }
+
+      .thumbnail-img {
+          width: 300px;
+          height: 180px;
+          object-fit: cover;
+      }
+
+      .video-duration {
+          position: absolute;
+          bottom: 8px;
+          right: 8px;
+          background-color: rgba(9, 9, 9, 0.8);
+          padding: 2px 5px;
+          font-size: 12px;
+          border-radius: 2px;
+      }
+
+      .video-info {
+          display: flex;
+          padding: 10px;
+      }
+
+      .channel-logo {
+          flex-shrink: 0;
+      }
+
+      .channel-logo-img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+      }
+
+      .video-details {
+          margin-left: 10px;
+      }
+
+      .video-title {
+          margin: 0;
+          font-size: 16px;
+          color: #fff;
+          line-height: 1.4;
+          font-weight: normal;
+      }
+
+      .channel-name {
+          margin: 4px 0 0 0;
+          font-size: 13px;
+          color: #909090;
+          display: flex;
+          align-items: center;
+      }
+
+      .verified {
+          font-size: 12px;
+          margin-left: 4px;
+          color: #4caf50;
+      }
+
+      .video-stats {
+          margin: 4px 0 0 0;
+          font-size: 12px;
+          color: #909090;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-card">
+      <div class="thumbnail">
+        <img
+          src="Screenshot 2024-10-05 180117.png"
+          alt="Video Thumbnail"
+          class="thumbnail-img"
+        />
+        <div class="video-duration">5:09</div>
+      </div>
+      <div class="video-info">
+        <div class="channel-logo">
+          <img
+            src="Screenshot 2024-10-05 180117.png"
+            alt="Channel Logo"
+            class="channel-logo-img"
+          />
+        </div>
+        <div class="video-details">
+          <h4 class="video-title">
+            Tata Group র এক সিদ্ধান্তের কারণে Ratan Tata কখনো ধনী হতে...
+          </h4>
+          <p class="channel-name">Star Golpo <span class="verified">✔</span></p>
+          <p class="video-stats">963 views • 13 minutes ago</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document
+      .querySelector(".video-card")
+      .addEventListener("click", function () {
+        alert("Video card clicked!");
+      });
+  </script>
+</html>
